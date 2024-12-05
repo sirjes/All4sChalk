@@ -71,6 +71,16 @@
         ul {
             padding-left: 20px;
         }
+        .feature-highlight {
+            border-left: 4px solid #6ea8fe;
+            padding-left: 1em;
+            margin: 1em 0;
+        }
+        .contact-methods {
+            display: grid;
+            gap: 1em;
+            margin: 1em 0;
+        }
     </style>
 </head>
 <body>
@@ -81,11 +91,46 @@
 
     <h1>All Fours Chalk Support</h1>
 
+    <h2>How to Play All Fours</h2>
+    <div class="feature-highlight">
+        <p>All Fours is a trick-taking card game where points are scored for:</p>
+        <ul>
+            <li>High: Highest trump in play (1 point)</li>
+            <li>Low: Lowest trump in play (1 point)</li>
+            <li>Jack: Jack of trumps (1 point)</li>
+            <li>Game: Most card points (1 or 2 points)</li>
+            <li>Hang: Winning all points in one hand (3 points)</li>
+            <li>Kick Points:
+                <ul>
+                    <li>Turning up Jack (3 points)</li>
+                    <li>Turning up Six (2 points)</li>
+                    <li>Turning up Ace (1 point)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <h2>Frequently Asked Questions</h2>
     
     <div class="question">
         <h3>How do I track points?</h3>
-        <p>Use the + and - buttons next to each team's score to add or subtract points. For game points when "Game Worth 2" is enabled, use the "Game" button to add 2 points at once.</p>
+        <p>Use the scoring buttons for each team:</p>
+        <ul>
+            <li>Regular points: High, Low, Jack, Game (1 point each)</li>
+            <li>Special points: Hang (3 points)</li>
+            <li>Kick points: Use the ⚡ buttons for turned up cards</li>
+            <li>Subtract points: Use the -1 button if needed</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h3>What are the ⚡ (Kick) buttons for?</h3>
+        <p>These buttons are used when a player turns up specific cards:</p>
+        <ul>
+            <li>⚡J - Turning up Jack (3 points)</li>
+            <li>⚡6 - Turning up Six (2 points)</li>
+            <li>⚡A - Turning up Ace (1 point)</li>
+        </ul>
     </div>
 
     <div class="question">
@@ -95,42 +140,47 @@
 
     <div class="question">
         <h3>How do I undo a move?</h3>
-        <p>Use the undo button (curved arrow) in the game controls to reverse your last move. You can undo multiple moves in sequence.</p>
+        <p>Use the "Undo" button in the game controls to reverse your last move. The app maintains a full history of all scoring actions.</p>
     </div>
 
     <div class="question">
         <h3>What is "Game Worth 2"?</h3>
-        <p>This option allows you to toggle between regular scoring and double points for game points. When enabled, using the "Game" button will add 2 points instead of 1.</p>
+        <p>This option allows you to toggle between regular scoring (1 point) and double points (2 points) for game points. Enable this if your group plays with game points worth 2.</p>
     </div>
 
     <div class="question">
         <h3>How do I view game history?</h3>
-        <p>Tap the history button to view a list of all moves in the current game. The history shows each move and the resulting score.</p>
+        <p>Tap the "History" button to view a chronological list of all scoring actions in the current game, including the running score after each move.</p>
     </div>
 
     <div class="question">
         <h3>How do I share game results?</h3>
-        <p>Use the share button (square with arrow) to capture and share the current game state with others.</p>
+        <p>Use the share button (square with arrow) to capture the current scoreboard and share it via any available sharing method on your device.</p>
     </div>
 
     <h2>Contact Support</h2>
-    <p>For additional support or to report issues, please visit our <a href="https://github.com/sirjes/All4sChalk/issues">GitHub Issues page</a>.</p>
+    <div class="contact-methods">
+        <p>For additional support or to report issues, you can:</p>
+        <ul>
+            <li>Visit our <a href="https://github.com/sirjes/All4sChalk/issues">GitHub Issues page</a></li>
+            <li>Email us at: <a href="mailto:keamouns@gmail.com">keamouns@gmail.com</a></li>
+        </ul>
+    </div>
 
     <h2>Version History</h2>
     <ul>
         <li><strong>Version 1.0</strong> - Initial release
             <ul>
-                <li>Basic score tracking</li>
+                <li>Complete scoring system with kick points</li>
                 <li>Team name customization</li>
-                <li>Game history</li>
+                <li>Game history tracking</li>
                 <li>Dark/Light mode support</li>
                 <li>Share functionality</li>
+                <li>Sound effects for scoring actions</li>
+                <li>Statistics tracking</li>
             </ul>
         </li>
     </ul>
 
-    <script>
-        // Add any interactive features here if needed
-    </script>
 </body>
-</html> 
+</html>
